@@ -10,6 +10,8 @@
     - [5. 卸载 dmg](#5-卸载-dmg)
     - [6. 将 dmg 转为 cdr](#6-将-dmg-转为-cdr)
     - [7. cdr 重命名为 iso](#7-cdr-重命名为-iso)
+    - [8. Windows 下制作可引导U盘](#8-windows-下制作可引导u盘)
+    - [9. MBP 装系统](#9-mbp-装系统)
     - [Refs](#refs)
 
 
@@ -332,7 +334,17 @@ total 58720256
 
 `cdr` 就是 `iso`，不需额外转换，只需重命名. 现在 `iso` 已经可以用来制作可引导U盘了.
 
+### 8. Windows 下制作可引导U盘
 
+把 `iso` 拉到 `windows` 里，下载 `etcher`，遇到提示说“找不到分区表”没关系，直接烧写，其实可以引导启动.
+
+### 9. MBP 装系统
+
+关机，按住 <kbd>Option</kbd>，开机，一路安装不提. 
+
+不过我的 `mbp` 是 2015春的，最高支持 `Big Sur`，参考
+
+[Mac OS Compatibility Guide for MacBook Pro](https://www.niwtech.com/guides/apple/macbook-pro/mac-os-compatibility/)
 
 ### Refs
 
