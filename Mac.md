@@ -12,6 +12,7 @@
     - [7. cdr 重命名为 iso](#7-cdr-重命名为-iso)
     - [8. Windows 下制作可引导U盘](#8-windows-下制作可引导u盘)
     - [9. MBP 装系统](#9-mbp-装系统)
+    - [\*10. 没毛用](#10-没毛用)
     - [Refs](#refs)
 
 
@@ -345,6 +346,10 @@ total 58720256
 不过我的 `mbp` 是 2015春的，最高支持 `Big Sur`，参考
 
 [Mac OS Compatibility Guide for MacBook Pro](https://www.niwtech.com/guides/apple/macbook-pro/mac-os-compatibility/)
+
+### *10. 没毛用
+
+WiFi就是挂了，重装系统都没用...
 
 ### Refs
 
