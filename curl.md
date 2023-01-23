@@ -1,5 +1,38 @@
 # curl command line cheatsheet
 
+## 0. Windows Build
+
+outputs are in `path/to/curl/builds`
+
+### x64
+
+open `x64 Native Tools Command Prompt for VS 2019`
+
+`cd` to `path/to/curl/winbuild`
+
+`Debug dll`
+
+`nmake -f Makefile.vc VC=14 mode=dll DEBUG=yes MACHINE=x64`
+
+`Release dll`
+
+`nmake -f Makefile.vc VC=14 mode=dll DEBUG=no MACHINE=x64`
+
+### Win32
+
+open `x86 Native Tools Command Prompt for VS 2019`
+
+`cd` to `path/to/curl/winbuild`
+
+`Debug dll`
+
+`nmake -f Makefile.vc VC=14 mode=dll DEBUG=yes MACHINE=x86`
+
+`Release dll`
+
+`nmake -f Makefile.vc VC=14 mode=dll DEBUG=no MACHINE=x86`
+
+
 ## 1. common download file
 
 `curl -o /path/to/file -x http://proxy.server:port -L https://download.link`
