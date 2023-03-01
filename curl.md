@@ -41,3 +41,11 @@ open `x86 Native Tools Command Prompt for VS 2019`
 - `-x` 可选的代理服务器
 - `-L` 自动跟随重定向，防止下载来一个 `302 reidrection`，后面是下载链接
 
+
+## 2. libcurl send multiple http requests with one socket
+
+After `curl_easy_init`, add `Connection: keep-alive` to `http headers` by calling 
+
+`curl_slist_append(headers, "Connection: keep-alive");`
+
+Then call `curl_easy_perform` as much as needed before calling `curl_easy_cleanup`.
