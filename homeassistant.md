@@ -4,7 +4,7 @@
    
     ```
     apt purge python3 python3-dev
-    ``
+    ```
 
 2. build python from source
 
