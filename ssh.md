@@ -33,6 +33,8 @@ The `timeout` value will be `3600` seconds. After changed the config file, `syst
 
 ## add ssh public key to server
 
+### uing password
+
 `ssh-copy-id -i ~/.ssh/id_ed25519.pub USER@SERVER`
 
 or
@@ -40,3 +42,9 @@ or
 `ssh-copy-id -i ~/.ssh/id_rsa.pub USER@SERVER`
 
 [How to Add SSH Public Key to Server](https://linuxhandbook.com/add-ssh-public-key-to-server/)
+
+### using pem or ppk
+
+`cat ~/.ssh/id_rsa.pub | ssh -i aws.pem ubuntu@ip_address "cat - >> ~/.ssh/authorized_keys"`
+
+[EC2 ssh-copy-id](https://gist.github.com/zburgermeiszter/eb21ead93e397cd2e52ae7b9562fb6d9)
