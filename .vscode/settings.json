@@ -1,0 +1,4 @@
+{
+    "markdown-image.base.fileNameFormat": "img/${YY}${MM}${DD}${hh}${mm}${ss}",
+    "markdown-image.local.path": "./",
+}
