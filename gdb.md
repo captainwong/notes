@@ -62,3 +62,5 @@ If you write a signal handler catches `SIGSEGV`, and got `EIP` from `siginfo_t.s
 If the crash point is in an `static` function, no function name would be printed out, just the function address like `0x54320`.
 
 One way to solve this is use `gdb exe` and run `info symbol 0x54320`.
+
+Show source and line: `addr2line -e a.out 0x54321`
