@@ -39,3 +39,12 @@ as the page said, just remove github's known-hosts will work:
 ```
 ssh-keygen -R github.com
 ```
+
+## change file case
+
+```bash
+git mv -f File1 file1
+git mv -f file2 File2
+git add .
+git commit -m msg
+```
