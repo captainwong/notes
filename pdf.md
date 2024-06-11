@@ -8,6 +8,6 @@
 
 哈哈哈哈哈哈哈哈哈！
 
-顺便记录一下 xps viewer 安装办法：
+顺便记录一下 `xps viewer` 安装办法：
 
 打开设置，搜 `optional features`，`add a featuer`, `xps`, 安装
