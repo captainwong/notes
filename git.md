@@ -48,3 +48,9 @@ git mv -f file2 File2
 git add .
 git commit -m msg
 ```
+
+## git-bash for windows 中文乱码
+
+如果遇到诡异的乱码问题：能正常输出中文，但编译输出有中文时乱码，执行 `make clean && make all > build.log 2>&1 && cat build.log` 又能正常输出中文时，当你尝试了网上各种设置方法没用后：
+
+尝试编辑 `~/.bashrc`, 追加 `chcp.com 65001` ...
