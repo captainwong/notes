@@ -31,6 +31,8 @@ esp-idf notes
 
 ## 1.4 vscode includePath settings
 
+> [How to fix "include path " problems in VS code IDE?](https://esp32.com/viewtopic.php?t=18947)
+
 after first successful build, there should be `build/compile_commands.json` appeared, thats what we need.
 
 edit `.vscode/c_cpp_properties.json` like this:
