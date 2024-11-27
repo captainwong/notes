@@ -54,3 +54,16 @@ git commit -m msg
 如果遇到诡异的乱码问题：能正常输出中文，但编译输出有中文时乱码，执行 `make clean && make all > build.log 2>&1 && cat build.log` 又能正常输出中文时，当你尝试了网上各种设置方法没用后：
 
 尝试编辑 `~/.bashrc`, 追加 `chcp.com 65001` ...
+
+
+## Remove untracked files from the working tree
+
+[How do I remove local (untracked) files from the current Git working tree?](https://stackoverflow.com/questions/61212/how-do-i-remove-local-untracked-files-from-the-current-git-working-tree)
+
+`git clean -fd`
+
+- `-f`: force
+- `-d`: Remove untracked directories in addition to untracked files. If an untracked directory is managed by a different Git repository, it is not removed by default. Use `-f` option twice if you really want to remove such a directory.
+
+
+
