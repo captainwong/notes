@@ -14,3 +14,13 @@ echo "jack ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/jack
 ```
 
 if jack's default shell is sh, run `chsh` to change it.
+
+## change hostname
+
+- read: `hostname` or `hostnamectl`
+- write: 
+  - `sudo hostnamectl set-hostname new-name`
+  - edit the `/etc/hosts` file to reflect the change
+
+
+
