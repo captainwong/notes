@@ -96,3 +96,28 @@ DONE:
 ```
 
 逻辑不通，`DEC R7`到0时会下溢到FF，所以上述循环远不止1000次.
+
+
+## A5 指令
+
+我反汇编时发现有有使用未定义的`A5`指令，导致后面全部乱掉了，查了一下才知道，`A5`指令就是防止反汇编的？？？...
+
+>加密方法：在A5后加一个二字节或三字节操作码，因为所有反汇编软件都不会反汇编A5指令，造成正常程序反汇编乱套，执行程序无问题仿制者就不能改变你的源程序。
+
+[关于51单片机的A5指令](https://www.cnblogs.com/afeibfp/p/6853552.html)
+
+有大佬做了实验，证实至少在`STC90C516RD+`这款单片机上，`A5`是双字节指令：
+
+>确实如网上所说，A5是一个2字节指令！
+
+[研究一下8051的A5指令](https://bbs.eeworld.com.cn/thread-567567-1-1.html)
+
+[D52](https://www.bipom.com/dis51.php) 是将 `A5` 解析为单字节伪指令 `DB 0A5H`.
+
+`SpiceLogic` 的 [8051 Disassembler](https://www.spicelogic.com/Products/8051-disassembler-1) 也是同样操作.
+
+按照 [STC官方论坛](https://www.stcaimcu.com/forum.php?mod=redirect&goto=findpost&ptid=6261&pid=53010) 里 `神农鼎` 大佬的解释：
+>A5, 是不公开的指令，对外解释，未扩展时就是 2个 NOP
+
+综上可以这么理解，在`STC`的`8`位单片机里，`A5` 指令是`2`字节指令，占用`2`个机器周期，作用等同于 `NOP NOP`.
+
