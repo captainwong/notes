@@ -65,5 +65,9 @@ git commit -m msg
 - `-f`: force
 - `-d`: Remove untracked directories in addition to untracked files. If an untracked directory is managed by a different Git repository, it is not removed by default. Use `-f` option twice if you really want to remove such a directory.
 
+## disable safe directory check
 
+```bash
+git config --global --add safe.directory '*'
+```
 
